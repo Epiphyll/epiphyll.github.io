@@ -6,15 +6,18 @@
     
 
     
-    <title>Hexo</title>
+    <title>新装linux系统 | Hexo</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+    <meta name="description" content="新装linux系统 CentOS  安装界面进行网络设置  修改 hostname   设置root账户密码 12sudo -spasswd root  安装ssh yum install openssh-server  修改vi &#x2F;etc&#x2F;ssh&#x2F;sshd_config ` PermintRootLogin yes(默认prohibit-password）          Ubuntu">
+<meta property="og:type" content="website">
+<meta property="og:title" content="新装linux系统">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;Firstblog&#x2F;%E6%96%B0%E8%A3%85linux%E7%B3%BB%E7%BB%9F.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="新装linux系统 CentOS  安装界面进行网络设置  修改 hostname   设置root账户密码 12sudo -spasswd root  安装ssh yum install openssh-server  修改vi &#x2F;etc&#x2F;ssh&#x2F;sshd_config ` PermintRootLogin yes(默认prohibit-password）          Ubuntu">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-04T10:32:51.487Z">
 <meta name="twitter:card" content="summary">
     
 
@@ -124,110 +127,138 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <em class="page-title-link" data-url="home">Home</em>
+    <em class="page-title-link" data-url="/Firstblog/%E6%96%B0%E8%A3%85linux%E7%B3%BB%E7%BB%9F.html">新装linux系统</em>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="page-" class="article article-single article-type-page" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2019" class="archive-year"><i class="icon fa fa-calendar-o"></i>2019</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/10/17/SecondBlog/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2019/10/17/SecondBlog/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2019-10-17T14:52:08.736Z" itemprop="datePublished">2019-10-17</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2019/10/17/SecondBlog/">SecondBlog</a>
+        新装linux系统
         </h1>
     
 
-        <p class="article-excerpt">
+            </header>
+        
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h4 id="新装linux系统"><a href="#新装linux系统" class="headerlink" title="新装linux系统"></a>新装linux系统</h4><ol>
+<li><p>CentOS</p>
+<ul>
+<li><p>安装界面进行网络设置</p>
+</li>
+<li><p>修改 hostname </p>
+</li>
+<li><p>设置root账户密码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo -s</span><br><span class="line">passwd root</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装ssh</p>
+<p><code>yum install openssh-server</code></p>
+<ul>
+<li><p>修改<code>vi /etc/ssh/sshd_config</code></p>
+<p>` PermintRootLogin yes(默认prohibit-password）</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>   Ubuntu </p>
+<p>   rhel需要先进行注册，然后才能使用yum</p>
+<h4 id="rhel-注册并订阅命令"><a href="#rhel-注册并订阅命令" class="headerlink" title="rhel 注册并订阅命令"></a>rhel 注册并订阅命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">subscription-manager register #注册</span><br><span class="line">subscrioption-manamger --auto-attach #订阅</span><br></pre></td></tr></table></figure>
+
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4>
+        </div>
+        <footer class="article-footer">
             
-        </p>
+
+
+
+    <a data-url="http://yoursite.com/Firstblog/%E6%96%B0%E8%A3%85linux%E7%B3%BB%E7%BB%9F.html" data-id="ck2kaefxx0001l0u18azzdqad" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
-</article>
-    
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "John Doe"
+        },
+        "headline": "新装linux系统",
+        "image": "http://yoursite.com",
         
-        <a href="/2019/10/17/%E6%96%B0%E8%A3%85linux%E7%B3%BB%E7%BB%9F/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2019/10/17/%E6%96%B0%E8%A3%85linux%E7%B3%BB%E7%BB%9F/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2019-10-17T14:36:21.000Z" itemprop="datePublished">2019-10-17</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2019/10/17/%E6%96%B0%E8%A3%85linux%E7%B3%BB%E7%BB%9F/">新装linux系统</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            新装linux系统
+        "datePublished": "2019-10-17",
+        "dateCreated": "2019-10-17",
+        "dateModified": "2019-11-04",
+        "url": "http://yoursite.com/Firstblog/新装linux系统.html",
+        "description": "新装linux系统
 CentOS
 
 安装界面进行网络设置
@@ -249,163 +280,23 @@ yum install openssh-server
 
 
    Ubuntu 
-  
-        </p>
-    </div>
+  ",
+        "wordCount": 51
+    }
+</script>
+
 </article>
-    
-        </div>
-    
 
-    
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/10/17/Firstblog-0/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
+    <section id="comments">
     
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2019/10/17/Firstblog-0/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2019-10-17T14:36:10.000Z" itemprop="datePublished">2019-10-17</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2019/10/17/Firstblog-0/">Firstblog</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            
-        </p>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-</article>
-    
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/10/17/FirstBlog/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2019/10/17/FirstBlog/">0</span>
-    
-</span>
 
 
     
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2019-10-17T08:47:46.000Z" itemprop="datePublished">2019-10-17</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2019/10/17/FirstBlog/">FirstBlog</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-    
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/10/17/hello-world/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2019/10/17/hello-world/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2019-10-17T07:24:02.461Z" itemprop="datePublished">2019-10-17</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2019/10/17/hello-world/">Hello World</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-
-    </div></section>
+    </section>
 
 
 
@@ -654,11 +545,13 @@ Quick
     var disqus_shortname = 'hexo-theme-hueman';
     
     
+    var disqus_url = 'http://yoursite.com/Firstblog/%E6%96%B0%E8%A3%85linux%E7%B3%BB%E7%BB%9F.html';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
